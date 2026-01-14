@@ -1,0 +1,177 @@
+
+
+home-root {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #050b08 0%,
+    #071226 100%
+  );
+}
+
+
+:root {
+  /* Core backgrounds */
+  --bg-main: #050b08;                 /* near black */
+  --bg-card: rgba(18, 36, 28, 0.85);  /* dark green card */
+  --bg-soft: rgba(18, 36, 28, 0.55);
+
+  /* Text */
+  --text-main: #e7f5ef;
+  --text-muted: #9fbdb0;
+  --text-soft: #cfe6dc;
+
+  /* Brand  */
+  --brand-primary: #22c55e;   /* emerald green */
+  --brand-accent: #16a34a;    /* deeper green */
+
+
+  --emo-happy: #4ade80;
+  --emo-sad: #60a5fa;         /* keep blue for sadness */
+  --emo-angry: #fb7185;
+  --emo-fear: #a78bfa;
+  --emo-surprise: #facc15;
+  --emo-disgust: #22c55e;
+  --emo-neutral: #9fbdb0;
+
+  /* Crisis / high-risk */
+  --emo-crisis: #fb7185;
+  --emo-crisis-bg: rgba(251, 113, 133, 0.15);
+
+  /* UI */
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
+.soft {
+  color: var(--text-soft);
+}
+
+
+.btn {
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--brand-primary), #5b21b6);
+  color: white;
+}
+
+.btn-accent {
+  background: linear-gradient(90deg, var(--brand-accent), var(--brand-accent));
+  color: #002b36;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-muted);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+
+.emotion-tag {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 15px;
+  color: #000;
+}
+
+.emotion-happy { background: var(--emo-happy); }
+.emotion-sad { background: var(--emo-sad); }
+.emotion-angry { background: var(--emo-angry); }
+.emotion-fear { background: var(--emo-fear); }
+.emotion-surprise { background: var(--emo-surprise); }
+.emotion-disgust { background: var(--emo-disgust); }
+.emotion-neutral { background: var(--emo-neutral); }
+
+.emotion-crisis {
+  background: var(--emo-crisis-bg);
+  border: 1px solid var(--emo-crisis);
+  color: var(--emo-crisis);
+}
+
+
+
+.notice {
+  padding: 14px;
+  border-radius: var(--radius-md);
+  background: var(--bg-soft);
+}
+
+.notice-crisis {
+  background: var(--emo-crisis-bg);
+  border: 1px solid var(--emo-crisis);
+  color: var(--text-main);
+}
+
+.app-page {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(
+      circle at 20% 10%,
+      rgba(34, 197, 94, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(180deg, #050b08 0%, #071226 100%);
+  color: var(--text-main);
+}
+
+
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+
+.page-container h2,
+.page-container h3 {
+  color: var(--text-main);
+}
+
+.page-container p,
+.page-container small {
+  color: var(--text-muted);
+}
+
+
+input,
+textarea {
+  background: rgba(18, 36, 28, 0.85);
+  color: var(--text-main);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-soft);
+  opacity: 1; /* important for readability */
+}

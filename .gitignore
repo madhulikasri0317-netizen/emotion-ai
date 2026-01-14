@@ -1,0 +1,11 @@
+
+.venv-py311/
+faceenv/
+node_modules/
+__pycache__/
+*.pyc
+
+training/results-distilbert/
+training/results-face/
+*.pt
+*.safetensors

@@ -1,0 +1,33 @@
+text,label
+"I am so happy and excited today!",joy
+"What a wonderful surprise!",joy
+"I love this so much",joy
+"Feeling great and content",joy
+"This made my day",joy
+"I feel sad and lonely today.",sadness
+"I'm really upset and down.",sadness
+"Tears keep coming, I'm heartbroken.",sadness
+"I miss them so much.",sadness
+"I'm feeling empty and low.",sadness
+"I'm furious about what happened",anger
+"Why would they do that? I'm so angry.",anger
+"I want to scream, this is infuriating.",anger
+"They betrayed me and I can't forgive",anger
+"This makes me so mad",anger
+"I'm scared something bad will happen.",fear
+"I feel nervous and worried about the future.",fear
+"My heart races when I think about it.",fear
+"I am terrified right now.",fear
+"I can't stop worrying.",fear
+"Wow, I did not see that coming!",surprise
+"Oh my god, that's unexpected!",surprise
+"What a shocking result!",surprise
+"I wasn't prepared for that surprise!",surprise
+"That's astonishing!",surprise
+"It's fine, I guess.",neutral
+"I'm okay, nothing special.",neutral
+"Just a normal day.",neutral
+"I don't feel strongly either way.",neutral
+"Meh, it's whatever.",neutral
+"I am really happy with this result!",joy
+"Feeling down and gloomy today.",sadness
